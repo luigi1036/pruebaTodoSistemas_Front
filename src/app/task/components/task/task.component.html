@@ -1,0 +1,60 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4" *ngFor="let task of tasks">
+           <div class="border card border-primary" style="max-width: 25rem;" >
+            <div class="card-header border border-primary">{{task.nombre}}</div>
+                <div class="card-body" >
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="card-tittle">Estado:</h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="card-tittle">{{task.estado}}</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="card-text">Descripción</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="card-text">{{task.descripcion}}</p>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="card-text">Fecha Ejecución</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="card-text">{{task.fechaEjecucion}}</p>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="card-text">Dias de retraso</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="card-text">{{task.diasRetraso}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="card-tittle">Empleado</h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="card-tittle">{{task.empleado.nombre}}</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-primary"  [routerLink]="['/formulario', task.id]">Editar</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-danger" (click)="eliminar(task)">Eliminar</button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
