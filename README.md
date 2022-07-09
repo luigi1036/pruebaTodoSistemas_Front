@@ -2,26 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.18.
 
-## Development server
+## Objetivo
+Este proyecto tiene como objetivo realizar la prueba de conocimiento.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Introducción 
 
-## Code scaffolding
+Se requiere hacer un sistema web para registrar actividades o tareas en una empresa para
+saber qué trabajo está pendiente por hacer. A dichas actividades se les debe asignar quién
+de los empleados las ejecutará desde una lista.
+Para ello se debe crear una base de datos que contenga la información de dichas actividades
+y los empleados. La premisa es que a una actividad se le puede asignar sólo un empleado.
+Un empleado puede estar asignado a más de una actividad.
+De la actividad se desea saber el estatus, (si se realizó, o si por el contrario, está pendiente),
+la fecha y hora estimada de ejecución, días de retraso de la ejecución respecto al día de hoy
+(si no hay retraso indicar 0 (cero)), y quién está asignado a dicha actividad.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Repositorio
+El código se encuentra alojado en github. Deberas contar con una cuenta github.
+* Cree una carpeta en donde se incluirá el código fuente<br>
+* Abra su consola y posicionese en la carpeta previamente creada<br>
+* Ejecute el comando<br>
+git clone https://github.com/luigi1036/pruebamultiplicatalent_front <br>
 
-## Build
+Luego de que termine la descarga, usted tendrá clonado el branch master en la carpeta previamente creada.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ejecute el proyecto de forma local.
 
-## Running unit tests
+## Intrucciones 
+Ejecute el comando npm i, para descargar todas las dependecias y posterior esto ejecute el 
+comando ng serve -o, esto abrira una ventana su explorador predeterminado.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
